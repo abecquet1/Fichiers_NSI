@@ -14582,7 +14582,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># À partir de tableaux d&#39;entiers entre 0 et 255</span>
@@ -14658,59 +14658,18 @@ b&#39;\x04\x01&#39;
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##############</span>
-<span class="c1"># CORRECTION #</span>
-<span class="c1">##############</span>
-
-<span class="c1"># Q3</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bytes</span><span class="p">([</span><span class="mi">65</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">67</span><span class="p">]))</span> <span class="c1"># 65, 66, 67 sont les codes ASCII des caractères A, B, C </span>
-
-<span class="c1"># Q4</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="s2">&quot;école&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">()))</span> <span class="c1"># On obtient 6 car en utf-8, le caractère &#39;é&#39; est codé sur deux octets</span>
-
-<span class="c1"># Q5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;big&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="c1"># retrouvons ces valeurs en écrivant 2000 en base 256 : </span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2000</span><span class="o">%</span><span class="k">256</span>)  # chiffre des unités
-<span class="nb">print</span><span class="p">(</span><span class="mi">2000</span><span class="o">//</span><span class="mi">256</span><span class="p">)</span> <span class="c1"># nombre de paquets de 256</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>b&#39;ABC&#39;
-6
-7 208
-208
-7
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14722,7 +14681,7 @@ b&#39;\x04\x01&#39;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f_read</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
@@ -14753,62 +14712,18 @@ b&#39;\x04\x01&#39;
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##############</span>
-<span class="c1"># CORRECTION #</span>
-<span class="c1">##############</span>
-
-<span class="c1"># Q6</span>
-
-<span class="c1"># import des données</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">f_read</span><span class="p">(</span><span class="s2">&quot;toto.txt&quot;</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
-
-<span class="c1"># on compte les &#39;a&#39; normalement</span>
-<span class="n">nb</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-  <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span>
-    <span class="n">nb</span><span class="o">+=</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="p">)</span>
-
-<span class="c1"># Q7</span>
-
-<span class="c1"># encodage du texte</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;hello world!&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
-
-<span class="c1"># sauvegarde dans le fichier</span>
-<span class="n">f_write</span><span class="p">(</span><span class="s2">&quot;hello.txt&quot;</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>0
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14975,50 +14890,18 @@ b&#39;\x04\x01&#39;
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##############</span>
-<span class="c1"># CORRECTION #</span>
-<span class="c1">##############</span>
-
-<span class="c1"># Q2.a</span>
-
-<span class="k">def</span> <span class="nf">cesar</span><span class="p">(</span><span class="n">b</span><span class="p">:</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">bytes</span><span class="p">:</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="p">[(</span><span class="n">octet</span><span class="o">+</span><span class="n">k</span><span class="p">)</span><span class="o">%</span><span class="k">256</span> for octet in b]
-    <span class="k">return</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-
-<span class="c1">#test</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cesar</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;coucou&quot;</span><span class="p">,</span> <span class="mi">149</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>b&#39;\xf8\x04\n\xf8\x04\n&#39;
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15028,46 +14911,18 @@ b&#39;\x04\x01&#39;
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xd7\x07\xf6\x0b\x04\xb5\xb6\xb5\xe9\n\xb5\xf6\x08\xb5\x07</span><span class="s1">X&gt;</span><span class="se">\n\x08\x08\xfe\xb5</span><span class="s1">X5</span><span class="se">\xb5\xf9</span><span class="s1">X&gt;</span><span class="se">\xf8\xfd\xfe\xfb\xfb\x07\xfa\x07\xb5\x01\xfa\xb5\x02\xfa\x08\x08\xf6\xfc\xfa\xc3\xb5\xdf\xbc\xfa\x08\x05</span><span class="s1">X=</span><span class="se">\x07\xfa\xb5\x06\n\xfa\xb5\t\n\xb5\t\xbc\xf6\x02\n\x08\xfa\x08\xb5\xf7\xfe\xfa\x03\xb5\xfa\t\xb5\xf7\x04\x03\xb5\xf8\x04\n\x07\xf6\xfc\xfa\xb5\x05\x04\n\x07\xb5\x01\xf6\xb5\x08\n\xfe\t\xfa\xb5\xb6</span><span class="s1">&#39;</span>
-
-<span class="c1">##############</span>
-<span class="c1"># CORRECTION #</span>
-<span class="c1">##############</span>
-
-<span class="c1"># il fut utiliser la clé -149</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cesar</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="o">-</span><span class="mi">149</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Bravo ! Tu as réussi à déchiffrer le message. J&#39;espère que tu t&#39;amuses bien et bon courage pour la suite !
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15084,26 +14939,12 @@ b&#39;\x04\x01&#39;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##############</span>
 <span class="c1"># CORRECTION #</span>
 <span class="c1">##############</span>
-
-<span class="c1"># chiffrement</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">f_read</span><span class="p">(</span><span class="s2">&quot;toto.txt&quot;</span><span class="p">)</span>      <span class="c1"># import du fichier </span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">cesar</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">149</span><span class="p">)</span>           <span class="c1"># chiffrement avec la clé secrète 149</span>
-<span class="n">f_write</span><span class="p">(</span><span class="s2">&quot;ces_toto.txt&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># export du fichier crypté</span>
-
-<span class="c1"># déchiffrement </span>
-
-<span class="c1"># chiffrement</span>
-
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">f_read</span><span class="p">(</span><span class="s2">&quot;ces_titi.txt&quot;</span><span class="p">)</span>  <span class="c1"># import du fichier </span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">cesar</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="o">-</span><span class="mi">149</span><span class="p">)</span>          <span class="c1"># déchiffrement avec la clé secrète 149</span>
-<span class="n">f_write</span><span class="p">(</span><span class="s2">&quot;tutu.txt&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>      <span class="c1">#export du fichier décrypté</span>
 </pre></div>
 
      </div>
@@ -15234,51 +15075,20 @@ $$<p>En Python, l'opérateur XOR a pour symbole <code>^</code> et peut être uti
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##############</span>
 <span class="c1"># CORRECTION #</span>
 <span class="c1">##############</span>
-
-<span class="k">def</span> <span class="nf">xor</span><span class="p">(</span><span class="n">b</span><span class="p">:</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span><span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span><span class="p">:</span>
-  <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
-  <span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">^</span><span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="k">len</span>(k)] for i in range(len(b))]
-  <span class="k">return</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">xor</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;coucou les amis&quot;</span><span class="p">,</span> <span class="s2">&quot;ant&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">xor</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s2">&quot;ant&quot;</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>b&#39;\x02\x01\x01\x02\x01\x01A\x02\x11\x12N\x15\x0c\x07\x07&#39;
-b&#39;coucou les amis&#39;
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15288,10 +15098,10 @@ b&#39;coucou les amis&#39;
 </blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;)</span><span class="se">\xa2\xdb\x17\x00\n\xa4\xc8\x01\x00\x03\x15</span><span class="s1">R</span><span class="se">\x1b\x07</span><span class="s1">N</span><span class="se">\t\x04</span><span class="s1">L</span><span class="se">\x11</span><span class="s1">J</span><span class="se">\x00\x00\x06\xaa\xc4\x13\x04</span><span class="s1">L</span><span class="se">\x15\x0c\x12</span><span class="s1">RUI,</span><span class="se">\x15\x00\x1a\n</span><span class="s1">M@&#39;</span>
@@ -15299,36 +15109,11 @@ b&#39;coucou les amis&#39;
 <span class="c1">##############</span>
 <span class="c1"># CORRECTION #</span>
 <span class="c1">##############</span>
-
-<span class="c1"># Il suffit d&#39;utiliser la même clé, &quot;martingale&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">xor</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s2">&quot;martingale&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Décidément on ne t&#39;arrête pas ! Bravo !
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -15408,7 +15193,7 @@ b&#39;coucou les amis&#39;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># exemple de lignes générées</span>
@@ -15440,65 +15225,37 @@ b&#39;coucou les amis&#39;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##############</span>
 <span class="c1"># CORRECTION #</span>
 <span class="c1">##############</span>
 
-<span class="c1"># Q1 Eve va devoir déchiffres TOUTES les lignes afin de connaître la clé correspondant à l&#39;indentifiant échangé (puisque tout est chiffré)</span>
-<span class="c1"># Si il met autant de temps que Bob pour déchiffrer un ligne, cela lui prendra au pire N*10 secondes pour trouver la clé</span>
-<span class="c1"># Pour N=10000 cela donne 100000 secondes, soit environs un jour de calcul</span>
-
-<span class="c1"># Q2</span>
 
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
 
 <span class="k">def</span> <span class="nf">chaine_alea</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;génère un str aleatoire de taille n dont les caractères ont un code unicode entre a et b (inclus)&quot;&quot;&quot;</span>
-  <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">s</span><span class="o">+=</span><span class="nb">chr</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">))</span>
-  <span class="k">return</span> <span class="n">s</span>
+    <span class="sd">&quot;&quot;&quot;Renvoie un str aleatoire de taille n dont les caractères ont un code unicode entre a et b (inclus)&quot;&quot;&quot;</span>
+    <span class="k">pass</span> <span class="c1"># à compléter</span>
 
 <span class="k">def</span> <span class="nf">generer</span><span class="p">(</span><span class="n">N</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;renvoie le tableau des id, K, k&quot;&quot;&quot;</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-      <span class="n">i</span> <span class="o">=</span> <span class="n">chaine_alea</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">126</span><span class="p">)</span>
-      <span class="n">K</span> <span class="o">=</span> <span class="n">chaine_alea</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">126</span><span class="p">)</span>
-      <span class="n">k</span> <span class="o">=</span> <span class="n">chaine_alea</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-      <span class="n">t</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span><span class="p">,</span><span class="n">K</span><span class="p">,</span><span class="n">k</span><span class="p">))</span>
-    <span class="k">return</span> <span class="n">t</span>
+    <span class="sd">&quot;&quot;&quot;Renvoie un tableau de N triplets (id, K, k)&quot;&quot;&quot;</span>
+    <span class="k">pass</span> <span class="c1"># à compléter</span>
 
 <span class="k">def</span> <span class="nf">chiffrer</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">bytes</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;chiffre le tableau ligne par ligne avec les petites clés&quot;&quot;&quot;</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
-      <span class="n">ligne</span> <span class="o">=</span> <span class="s2">&quot;identifiant : &quot;</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s2">&quot;, cle : &quot;</span><span class="o">+</span><span class="n">K</span>
-      <span class="n">b</span><span class="o">+=</span> <span class="n">xor</span><span class="p">(</span><span class="n">ligne</span><span class="o">.</span><span class="n">encode</span><span class="p">(),</span> <span class="n">k</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">b</span>
+    <span class="sd">&quot;&quot;&quot;Renvoie une version chiffrée de t dont chaque case contient une chaîne de caractère respectant les spécifications&quot;&quot;&quot;</span>
+    <span class="k">pass</span> <span class="c1"># à compléter</span>
 
 <span class="k">def</span> <span class="nf">choix</span><span class="p">(</span><span class="n">b</span><span class="p">:</span><span class="nb">bytes</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">tuple</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;choisit une ligne du tableau, casse le chiffrement et renvoie la clé et son identifiant&quot;&quot;&quot;</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">//</span><span class="mi">50</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="mi">50</span><span class="p">:(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">50</span><span class="p">]</span>
-    <span class="n">lettres</span> <span class="o">=</span> <span class="p">[</span><span class="nb">chr</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">65</span><span class="p">,</span><span class="mi">91</span><span class="p">)]</span>
-    <span class="k">for</span> <span class="n">A</span> <span class="ow">in</span> <span class="n">lettres</span><span class="p">:</span>
-      <span class="k">for</span> <span class="n">B</span> <span class="ow">in</span> <span class="n">lettres</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">C</span> <span class="ow">in</span> <span class="n">lettres</span><span class="p">:</span>
-          <span class="k">for</span> <span class="n">D</span> <span class="ow">in</span> <span class="n">lettres</span><span class="p">:</span>
-            <span class="n">ligne</span> <span class="o">=</span> <span class="n">xor</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="o">+</span><span class="n">C</span><span class="o">+</span><span class="n">D</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">ligne</span><span class="p">[:</span><span class="mi">14</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s2">&quot;identifiant : &quot;</span><span class="p">:</span>
-              <span class="k">return</span> <span class="p">(</span><span class="n">ligne</span><span class="p">[</span><span class="mi">14</span><span class="p">:</span><span class="mi">14</span><span class="o">+</span><span class="mi">12</span><span class="p">],</span> <span class="n">ligne</span><span class="p">[</span><span class="o">-</span><span class="mi">16</span><span class="p">:])</span>
+    <span class="sd">&quot;&quot;&quot;choisit aléatoirement une ligne du tableau chiffré b, casse son chiffrement et renvoie la clé et son identifiant&quot;&quot;&quot;</span>
+    <span class="k">pass</span> <span class="c1"># à compléter</span>
 
 <span class="k">def</span> <span class="nf">retrouver</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-  <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
-      <span class="k">return</span> <span class="n">K</span>
-  <span class="k">return</span> <span class="kc">None</span>
+    <span class="sd">&quot;&quot;&quot;Renvoie la grande clé du tableau t d&#39;identifiant i&quot;&quot;&quot;</span>
+    <span class="k">pass</span> <span class="c1"># à compléter</span>
 
+<span class="c1"># Tests</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">generer</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">chiffrer</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 <span class="n">i</span><span class="p">,</span> <span class="n">K</span> <span class="o">=</span> <span class="n">choix</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
@@ -15523,11 +15280,18 @@ b&#39;coucou les amis&#39;
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>clé choisie par Bob : 0{N,Cu~ot_Bk%#+]
-identifiant correspondant : }Uk2Lb`ryDMJ
-clé retrouvée par Alice : 0{N,Cu~ot_Bk%#+]
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_12420/2772623270.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">     29</span> t <span class="ansi-yellow-intense-fg ansi-bold">=</span> generer<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     30</span> b <span class="ansi-yellow-intense-fg ansi-bold">=</span> chiffrer<span class="ansi-yellow-intense-fg ansi-bold">(</span>t<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 31</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>i<span class="ansi-yellow-intense-fg ansi-bold">,</span> K <span class="ansi-yellow-intense-fg ansi-bold">=</span> choix<span class="ansi-yellow-intense-fg ansi-bold">(</span>b<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     32</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;clé choisie par Bob :&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> K<span class="ansi-yellow-intense-fg ansi-bold">.</span>decode<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     33</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;identifiant correspondant :&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> i<span class="ansi-yellow-intense-fg ansi-bold">.</span>decode<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: cannot unpack non-iterable NoneType object</pre>
 </div>
 </div>
 
